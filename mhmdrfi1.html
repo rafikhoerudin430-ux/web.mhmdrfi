@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Branding Portfolio</title>
+    <style>
+        /* --- RESET & BASIC STYLES --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            color: #333;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* --- NAVBAR --- */
+        header {
+            background-color: #ffffff;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .logo span {
+            color: #3498db;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a:hover {
+            color: #3498db;
+            transition: 0.3s;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 10%;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .hero-text {
+            max-width: 50%;
+        }
+        .hero-text h2 {
+            font-size: 20px;
+            color: #3498db;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .hero-text h1 {
+            font-size: 48px;
+            color: #2c3e50;
+            margin: 10px 0;
+        }
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        .hero-img img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid #fff;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* --- ABOUT & SERVICES --- */
+        .section {
+            padding: 80px 10%;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            position: relative;
+        }
+        .section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #3498db;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+        }
+
+        /* --- RESPONSIVE DESIGN --- */
+        @media (max-width: 768px) {
+            header { padding: 20px 5%; }
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 40px 5%;
+            }
+            .hero-text { max-width: 100%; margin-top: 30px; }
+            .hero-text h1 { font-size: 36px; }
+            .hero-img img { width: 200px; height: 200px; }
+            .section { padding: 60px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">Nama<span>Kamu</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#services">Keahlian</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h2>Halo, Saya Rafi student of networking engineering</h2>
+            <!-- Ganti dengan Nama dan Profesimu -->
+            <h1>Muhamad Rafi Khoerudin</h1>
+            <p>Siswa SMK jurusan Teknik jaringan Komputer dan Telekomunikasi yang tertarik pada jaringan,dan Internet Of things (IOT).</p>
+            <a href="#contact" class="btn">Hubungi Saya</a>
+        </div>
+        <div class="hero-img">
+            <!-- Ganti URL gambar di bawah dengan foto formal/semi-formal kamu -->
+            <img src="<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Rafi Khoerudin</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; /* Ganti warna ini jika Anda mau */
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        
+        /* Hero Section Styling */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .hero-text {
+            flex: 1;
+            padding-right: 50px;
+        }
+        .hero-text h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero-text p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .hero-img {
+            flex: 1;
+            text-align: center;
+        }
+        .hero-img img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%; /* Membuat foto jadi lingkaran */
+            border: 5px solid #fff; /* Memberikan bingkai putih */
+        }
+
+        /* About Section Styling */
+        .about {
+            padding: 80px 0;
+        }
+        .about h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .about-content {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <!-- Navigasi bisa diletakkan di sini -->
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Halo, Saya Rafi student of networking engineering</h2>
+                <h1>Muhamad Rafi Khoerudin</h1>
+                <p>Siswa SMK jurusan Teknik jaringan Komputer dan Telekomunikasi</p>
+            </div>
+            <div class="hero-img">
+                <!-- Ganti nama file gambar sesuai dengan nama file foto Anda -->
+                <img src="foto-rafi.jpg" alt="Foto Profil Rafi Khoerudin">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <div class="about-content">
+                <p>Saya memiliki passion yang besar dalam industri digital, terutama dalam bidang teknik jaringan komputer. Saya juga tertarik dalam pengembangan perangkat lunak dan pembuatan konten kreatif. Saya selalu bersemangat untuk belajar hal-hal baru dan berkolaborasi dalam proyek-proyek yang menantang.</p>
+                <!-- Tambahkan lebih banyak detail tentang diri Anda di sini -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tambahkan bagian lain seperti Services/Skills di sini -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Muhamad Rafi Khoerudin</p>
+        </div>
+    </footer>
+
+</body>
+</html>" alt="Foto Profil">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <h2>Tentang Saya</h2>
+        <p style="max-width: 800px; margin: 20px auto 0; color: #666;">
+Saya adalah Muhamad Rafi Khoerudin, siswa kelas XI di SMKN 13 Bandung, jurusan Teknik Jaringan Komputer dan Telekomunikasi (TJKT).
+    
+Saya tertarik pada dunia jaringan komputer sejak pertama kali belajar bagaimana sebuah paket data bisa berpindah dari satu perangkat ke perangkat lain di seluruh dunia. Dari situ, saya mulai mendalami konfigurasi jaringan, Subnetting IP Address, hingga administrasi server Linux.
+
+Saat ini saya masih dalam tahap belajar dan terus meningkatkan pemahaman di bidang jaringan komputer, baik dari materi sekolah maupun latihan mandiri.
+        </p>
+    </section>
+
+    <!-- SERVICES / SKILLS SECTION -->
+    <section class="section" id="services" style="background-color: #f0f4f8;">
+        <h2>Layanan & Keahlian</h2>
+        <div class="services-grid">
+            <div class="card">
+                <h3>Content Creation</h3>
+                <p>Keahlian yang bisa saya pelajari selama belajar di jurusan TJKT,baik dari sekolah,praktikum,maupun belajar mandiri</p>
+            </div>
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Membangun website yang cepat, responsif, dan mudah digunakan untuk kebutuhan bisnis Anda.</p>
+            </div>
+            <div class="card">
+                <h3>Brand Strategy</h3>
+                <p>Membantu merancang identitas brand mulai dari logo, warna, hingga tone of voice yang konsisten.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+        <h2>Mari Berkolaborasi</h2>
+        <p style="margin-bottom: 25px;">Punya proyek menarik atau ingin berdiskusi? Jangan ragu untuk menghubungi saya.</p>
+        <!-- Ganti link di bawah dengan email atau WhatsApp kamu -->
+        <a href="mailto:rafikhoerudin430@gmail.com" class="btn">Kirim Email</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Muhamad Rafi Khoerudin. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
